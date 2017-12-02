@@ -1,0 +1,121 @@
+$first_color: #3c414c;
+$second_color: #2f2f2f;
+$third_color: #5db2c3;
+$grey_color: #bec3c4;
+$first_text_color: #d8d9db;
+
+$s_size: 12px;
+$m_size: 14px;
+$l_size: 16px;
+$xl_size: 18px;
+$xxl_size: 54px;
+$xxxl_size: 56px;
+
+@media screen and (max-width: 992px) {
+	.pc-show {
+		display: none;
+	}
+	.mobile-show {
+		display: block;
+	}
+	.second-header {
+		background: $second_color;
+    height: 64px;
+	}
+	.second-header_logo li {
+		line-height: 64px;
+		float: left;
+	}
+	.mobile-menu {
+		position: absolute;
+		width: 50%;
+		height: 100vh;
+		background: $second_color;
+		right: 0;
+		transform: translateX(100%);
+		z-index: 2;
+	}
+	.hamburger-menu {
+		width: 30px;
+	  height: 64px;
+	  float: right;
+	  cursor: pointer;
+	  overflow: hidden;
+	  position: relative;
+	}
+	.hamburger-menu span:nth-child(1) {
+		top: 20.5px;
+	}
+	.hamburger-menu span:nth-child(2), .hamburger-menu span:nth-child(3) {
+		top: 28.5px;
+	}
+	.hamburger-menu span:nth-child(4) {
+		top: 36.5px;
+	}
+	.hamburger-menu span {
+		width: 30px;
+	  height: 2px;
+	  background: #fff;
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	}
+	.welcome-block {
+		height: 100vh;
+		background-position: 10% 50%;
+	}
+	.welcome-text_title {
+		font-size: 9vw;
+		text-align: center;
+	}
+	.welcome-text_second_title {
+		font-size: 9vw;
+		font-weight: 100;
+		text-align: center;
+	}
+	.welcome-text_description {
+		width: 100%;
+		font-size: 4vw;
+		color: $grey_color;
+		line-height: 36px;
+	}
+	.timezone {
+		width: 340px;
+	}
+	.first-button {
+		margin: auto;
+	}
+	.mobile-menu-show {
+		transform: translateX(0);
+	}
+	.other-services .container:before, .other-services .container:after {
+		display: none;
+	}
+	.other-services h2 {
+		padding: 40px 0px;
+		margin: 0px;
+	}
+	.other-services .panel {
+		background-color: transparent;
+		border: none;
+	}
+	.other-services .panel-heading {
+		padding: 10px 0px;
+		background-color: transparent;
+		border: none;
+	}
+	.other-services .panel-title {
+		font-size: 4vw;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.other-services .active a {
+		color: $third_color;
+	}
+	.other-services .panel-body {
+		padding: 15px 0px;
+		border-top: none !important;
+		color: #fff;
+	}
+
+}

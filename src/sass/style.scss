@@ -1,0 +1,426 @@
+$first_color: #3c414c;
+$second_color: #2f2f2f;
+$third_color: #5db2c3;
+$grey_color: #bec3c4;
+$first_text_color: #d8d9db;
+
+$s_size: 12px;
+$m_size: 14px;
+$l_size: 16px;
+$xl_size: 18px;
+$xxl_size: 54px;
+$xxxl_size: 56px;
+
+/* Common tag */
+
+h1 {
+	color: $first_color;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+.pc-show {
+	display: block;
+}
+
+.mobile-show {
+	display: none;
+}
+
+.right {
+	float: right;
+}
+
+.block-center {
+	display: flex;
+	justify-content: center;
+}
+
+.black-opacity {
+	display: none;
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: 1;
+  opacity: 0.5;
+}
+
+/* First header */
+
+.first-header {
+  height: 50px;
+  line-height: 50px;
+  background-color: #3c414c;
+  color: #d8d9db;
+  font-size: $m_size;
+}
+
+.first-header li {
+  float: left;
+}
+
+.first-header-contact {
+  padding: 0 18px;
+}
+
+.first-header_phones {
+  float: left;
+  padding-left: 50px;
+}
+
+.first-header-contact_img:first-child {
+  padding-left: 10px; 
+}
+.first-header-contact_img {
+  padding: 0px 5px
+}
+
+/* Welcome block */
+
+.welcome-block {
+  width: 100%;
+  height: calc(100vh - 50px);
+  position: relative;
+  min-height: 100%;
+  background-image: url(http://defy-logistics.com.ua/wp-content/uploads/2017/07/slidebg2-100.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.welcome-text {
+	color: #ffffff;
+	position: relative;
+	display: flex;
+	vertical-align: middle;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.welcome-text_title {
+	font-size: $xxl_size;
+	line-height: $xxl_size;
+	font-weight: 700;
+}
+
+.welcome-text_second_title {
+	font-size: $xxxl_size;
+	font-weight: 300;
+}
+
+.welcome-text_description {
+	font-size: $l_size;
+  margin: 20px 0px 50px 0px;
+  width: 550px;
+  line-height: 24px;
+}
+
+/* Second header */
+
+.second-header {
+  width: 100%;
+  height: 130px;
+  line-height: inherit;
+  position: absolute;
+  background: none;
+  left: 0;
+  top: 0;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+  z-index: 4;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.second-header_menu {
+  font-size: $l_size;
+  margin-top: 5px;
+}
+
+.second-header_menu li {
+	float: left;
+	margin-left: 30px;
+	padding: 0px;
+}
+
+.second-header_menu li a {
+	font-size: $l_size;
+	color: #fff;
+	padding: 0px;
+}
+
+.dropdown-menu {
+	min-width: 280px;
+  margin: 0px;
+  background-color: rgba(238,238,238,0.95);
+}
+
+.dropdown-menu li {
+	margin-left: 0px;
+  padding: 5px 15px;
+  width: 100%;
+}
+
+.dropdown-menu li a {
+	font-size: $m_size;
+	color: #333;
+	font-weight: 700
+}
+
+.dropdown-menu:before {
+	content: '';
+  position: absolute;
+  top: -16px;
+  left: 1.8em;
+  width: 1.2em;
+  height: 1.2em;
+  border-top-color: rgba(238,238,238,0.95);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(238,238,238,0.95);
+  transform: rotate(180deg);
+}
+
+.dropdown-toggle {
+	cursor: pointer;
+}
+
+/* TimeZone style */
+.timezone {
+  font-size: 22px;
+  font-weight: 200;
+  position: absolute;
+  bottom: 10px;
+  width: 530px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.timezone p {
+	font-weight: 500;
+	margin-bottom: 3px;
+}
+
+.timezone-block {
+	width: 100%;
+}
+
+/* Main Services */
+
+.services {
+	margin-bottom: 80px;
+}
+
+.services-block {
+	min-height: 385px;
+	position: relative;
+}
+
+.services-title {
+	margin: 15px 0px;
+	font-size: 1vw;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.services-description {
+	
+}
+
+.services-photo img {
+	width: 100%;
+}
+
+.services-more {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	text-transform: uppercase;
+}
+
+/* Author block */
+
+.author {
+	box-shadow: 0px 0px 7px #4b4b4b;
+	min-height: 385px;
+}
+
+.author-photo {
+	display: table-cell;
+	padding: 15px;
+}
+
+.author-name {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 15px;
+}
+
+.author-description {
+	padding: 15px;
+}
+
+.author .services-more {
+	right: 30px;
+}
+
+/* Other Servieces */
+
+.map-bg {
+	background: url(http://defy-logistics.com.ua/wp-content/uploads/2017/02/map-bg.png) no-repeat;
+	background-position: 50%;
+}
+
+.other-services .container:before {
+	background: #ffffff;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 2px;
+	height: 45%;
+	left: 40%;
+	bottom: 0;
+	z-index: 3;
+}
+
+.other-services .container:after {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	left: 40%;
+	position: absolute;
+	top: 42%;
+	margin: -18px 0 0 -8px;
+	background: #ffffff;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.for-before:before {
+	content: "";
+  display: block;
+	background: #ffffff;
+  position: absolute;
+  width: 2px;
+  height: 41%;
+  left: 40%;
+  top: 0;
+  z-index: 3;
+}
+
+.for-before:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 40%;
+  bottom: 45%;
+  margin: -12px 0 0 -5px;
+  background: #ffffff;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.other-services {
+	background-color: $first_color;
+	color: #ffffff;
+	position: relative;
+}
+
+.other-services .nav-tabs {
+	border-bottom: 1px solid transparent;
+}
+
+.other-services .nav-tabs li {
+	float: none;
+}
+
+.other-services .nav-tabs li a {
+	color: #ffffff;
+  padding: 10px 0px;
+	border: 0px solid transparent;
+	font-size: 1.2vw;
+}
+.other-services .nav-tabs li a:hover {
+	background-color: transparent;
+}
+
+.other-services .nav-tabs li.active>a {
+	color: $third_color;
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+.other-services .tab-content {
+	padding-top: 200px;
+	padding-left: 100px;
+}
+
+.other-services .tab-content-description {
+	padding-top: 16px;
+	line-height: 24px;
+	color: #dbdbdc;
+}
+
+.other-services .tab-content h2 {
+	margin: 0px 0px 25px 0px;
+}
+
+.other-services .tab-content a {
+	color: $third_color;
+}
+
+.other-services-top {
+	padding-top: 65px;
+}
+
+.other-services-top_text {
+	padding-top: 85px;
+}
+
+.other-services-top_text h5 {
+	color: $grey_color;
+}
+
+.other-services-bottom {
+	font-size: 24px;
+  padding: 155px 0px 65px 0px;
+  text-transform: uppercase;
+}
+
+/* Button style */ 
+
+.first-button {
+	width: 195px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: 1px solid #ffffff;
+  font-size: $m_size;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.first-button:hover {
+	background-color: $third_color;
+}
+
+@import 'media992px.scss';
