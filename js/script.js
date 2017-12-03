@@ -24,3 +24,8 @@ setInterval(function(){
 	$('#divSeoul').text(moment.tz('Asia/Seoul').format('HH:mm'));
 	$('#divLondon').text(moment.tz('Europe/London').format('HH:mm'));
 }, 1000);
+
+$('.count-number').counterUp({delay:10,time:2000,});
+function getCurrentScroll(){
+	return window.pageYOffset||document.documentElement.scrollTop;
+}

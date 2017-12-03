@@ -17,6 +17,10 @@ h1 {
 	color: $first_color;
 }
 
+h2	{
+	font-weight: 900;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -343,6 +347,7 @@ li {
 	background-color: $first_color;
 	color: #ffffff;
 	position: relative;
+	margin-bottom: 60px;
 }
 
 .other-services .nav-tabs {
@@ -406,21 +411,131 @@ li {
   text-transform: uppercase;
 }
 
+/* Why Choose Us */
+
+.why-choose-us {
+	margin-bottom: 80px;
+}
+
+.why-choose-us h2 {
+	margin-bottom: 70px;
+}
+
+.why-choose-us_description {
+	margin-bottom: 80px;
+}
+
+.why-choose-us .photo img {
+	width: 100%;
+}
+
+/* Counters */
+
+.counters {
+	width: 100%;
+	margin: 80px 0px 0px 0px;
+}
+
+.count {
+	width: 100%;
+	border-right: 1px dotted #acacac;
+}
+
+.count:last-child {
+	border-right: none;
+}
+
+.count-top img {
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+.count-number {
+	font-weight: 900;
+	font-size: 26px;
+	vertical-align: bottom;
+}
+
+.count-bottom {
+	font-size: 14px;
+	color: #acacac;
+}
+
+/* Special Offer */
+
+.special-offer {
+	background-color: $first_color;
+	position: relative;
+}
+
+.special-offer-left {
+	margin: 50px 0;
+}
+
+.special-offer-left_first-title {
+	font-size: 3vw;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.special-offer-left_second-title {
+	font-size: 2.5vw;
+    color: #ffffff;
+}
+
+.special-offer-left_description {
+	font-size: 16px;
+    color: #9d9d9f;
+    width: 85%;
+    margin: 50px 0;
+}
+
+.special-offer-right img {
+	width: 55%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+    bottom: 0;
+    top: 0;
+    -webkit-clip-path: polygon(0 100%, 0% 100%, 100% 100%, 100% 0%, 20% 0%);
+    clip-path: polygon(0 100%, 0% 100%, 100% 100%, 100% 0%, 20% 0%);
+    object-fit: cover;
+}
+
+.special-offer-center_photo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -32px;
+	text-align: center;
+}
+
 /* Button style */ 
 
 .first-button {
 	width: 195px;
-  margin-top: 20px;
-  padding: 10px 25px;
-  border: 1px solid #ffffff;
-  font-size: $m_size;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.5s;
+	margin-top: 20px;
+	padding: 10px 25px;
+	border: 1px solid #ffffff;
+	font-size: $m_size;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.5s;
 }
 
 .first-button:hover {
 	background-color: $third_color;
+}
+
+.second-button {
+	color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #5db2c3;
+    width: 195px;
+    padding: 15px 20px;
+    cursor: pointer;
 }
 
 @import 'media992px.scss';
