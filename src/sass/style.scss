@@ -289,6 +289,7 @@ li {
 .map-bg {
 	background: url(http://defy-logistics.com.ua/wp-content/uploads/2017/02/map-bg.png) no-repeat;
 	background-position: 50%;
+	position: relative;
 }
 
 .other-services .container:before {
@@ -343,10 +344,10 @@ li {
   z-index: 1;
 }
 
+
 .other-services {
 	background-color: $first_color;
 	color: #ffffff;
-	position: relative;
 	margin-bottom: 60px;
 }
 
@@ -475,9 +476,12 @@ li {
 
 .special-offer-left_first-title {
 	font-size: 3vw;
-    font-weight: 900;
-    margin-bottom: 10px;
-    color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #ffffff;
+  span {
+  	color: $third_color;
+  }
 }
 
 .special-offer-left_second-title {
@@ -567,6 +571,151 @@ li {
 .news-more {
 	float: right;
 	margin-top: 40px;
+}
+
+/* Partners */
+
+.partners {
+	margin-bottom: 80px;
+}
+
+.partners h2 {
+	margin-bottom: 70px;
+}
+
+.partners img {
+	width: 100%;
+}
+
+/* Footer */
+
+footer {
+	background-color: $first_color;
+	input {
+		width: 100%;
+    height: 55px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #cacaca;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-sizing: inherit;
+	};
+	textarea {
+    width: 100%;
+    height: 185px;
+    background-color: transparent;
+    border: 1px solid #cacaca;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-sizing: inherit;
+	};
+	button {
+		width: 100%;
+		height: 55px;
+		color: #5db2c3;
+		background-color: transparent;
+		border: 1px solid #5db2c3;
+		padding: 0px 20px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		transition: 0.5s;
+	};
+	button:hover {
+		background-color: $third_color;
+		color: #fff;
+	};
+	.mobile-block-center {
+		display: block;
+	}
+	.for-before:after {
+		bottom: 58%;
+		left: 33%;
+	};
+	.for-before:before {
+		left: 33%;
+	};
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #fff;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: #fff;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: #fff;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: #fff;
+	}
+
+}
+
+
+
+.footer-title h2 {
+	color: #fff;
+	margin: 80px 0px;
+}
+
+.footer-address, .footer-phones {
+	margin-bottom: 80px;
+}
+
+.footer-address_icon, .footer-phones_icon {
+	display: table-cell;
+	padding-right: 20px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.footer-address_text, .footer-phones_text {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.footer-address_text_title, .footer-phones_text {
+	font-size: 18px;
+	color: #fff;
+}
+
+.footer-address_text_description {
+	font-size: $l_size;
+	color: $grey_color;
+}
+
+.footer-right {
+	padding-top: 80px;
+	padding-left: 100px;
+}
+
+.footer-right_hint {
+	color: $grey_color;
+	font-size: $l_size;
+	padding-bottom: 10px;
+}
+
+.copyright {
+	margin: 80px 0px;
+	font-size: $l_size;
+	color: #fff;
+}
+
+.copyright a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Social Icons */
+
+.social-icons {
+	float: left;
+}
+
+.social-icons li {
+	float: left;
+	padding: 0px 5px;
 }
 
 /* Button style */ 

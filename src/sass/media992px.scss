@@ -168,4 +168,34 @@ $xxxl_size: 56px;
 			margin: auto;
 		}
 	}
+	.news-item {
+		margin-bottom: 80px;
+	}
+	.news-item:last-child {
+		margin-bottom: 0px;
+	}
+	.partner {
+		margin-bottom: 40px;
+	}
+	.partner:last-child {
+		margin-bottom: 0px;
+	}
+	footer {
+		.mobile-block-center {
+			display: flex;
+			justify-content: center;
+		};
+		.footer-address, .footer-phones {
+			margin-bottom: 40px;
+		}
+		.footer-title h2 {
+			margin: 40px 0px;
+		}
+		.for-before:after {
+			display: none;
+		};
+		.for-before:before {
+			display: none;
+		}
+	}
 }

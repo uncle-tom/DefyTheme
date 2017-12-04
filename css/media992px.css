@@ -119,4 +119,23 @@
     margin: 50px 0; }
     .special-offer-left_photo img {
       display: block;
-      margin: auto; } }
+      margin: auto; }
+  .news-item {
+    margin-bottom: 80px; }
+  .news-item:last-child {
+    margin-bottom: 0px; }
+  .partner {
+    margin-bottom: 40px; }
+  .partner:last-child {
+    margin-bottom: 0px; }
+  footer .mobile-block-center {
+    display: flex;
+    justify-content: center; }
+  footer .footer-address, footer .footer-phones {
+    margin-bottom: 40px; }
+  footer .footer-title h2 {
+    margin: 40px 0px; }
+  footer .for-before:after {
+    display: none; }
+  footer .for-before:before {
+    display: none; } }
