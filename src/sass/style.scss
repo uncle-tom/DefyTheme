@@ -1,4 +1,4 @@
-$first_color: #3c414c;
+$first_color: #3c414c; /* Black */
 $second_color: #2f2f2f;
 $third_color: #5db2c3;
 $grey_color: #bec3c4;
@@ -466,6 +466,7 @@ li {
 .special-offer {
 	background-color: $first_color;
 	position: relative;
+	margin-bottom: 80px;
 }
 
 .special-offer-left {
@@ -509,6 +510,63 @@ li {
 	right: 0;
 	bottom: -32px;
 	text-align: center;
+}
+
+/* News */
+
+.news {
+	margin-bottom: 80px;
+}
+
+.news h2 {
+	margin-bottom: 70px;
+}
+
+.news-block {
+	position: relative;
+	border: 1px solid $grey_color;
+}
+
+.news-photo img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.news-title {
+	min-height: 80px;
+	padding: 40px 15px;
+	font-size: 14px;
+    font-weight: 900;
+}
+
+.news-title a {
+	color: #000;
+}
+
+.news-date {
+	position: absolute;
+	left: 30px;
+	top: -30px;
+	width: 50px;
+	font-size: 20px;
+	color: #fff;
+	background-color: $third_color;
+	text-align: center;
+}
+
+.news-date_month {
+	background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 2;
+}
+
+.news-more {
+	float: right;
+	margin-top: 40px;
 }
 
 /* Button style */ 
