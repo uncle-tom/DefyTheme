@@ -469,6 +469,68 @@ li {
 .partners img {
   width: 100%; }
 
+/* Head Page Block */
+.head-page-block {
+  background-image: url(http://defy-logistics.com.ua/wp-content/uploads/2017/02/defylogistics-dostavka2.jpg);
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 415px;
+  min-height: 415px;
+  margin-bottom: 0; }
+
+.head-page-block_opacity {
+  position: absolute;
+  min-height: 415px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0; }
+
+.head-page-block h1 {
+  color: #fff;
+  font-size: 54px;
+  font-weight: 700; }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  line-height: 54px;
+  margin-bottom: 54px;
+  border-bottom: 1px solid #bec3c4; }
+  .breadcrumbs a {
+    display: inline-block;
+    line-height: inherit;
+    padding-right: 40px;
+    position: relative; }
+  .breadcrumbs a:before {
+    border-right: 1px solid #bec3c4;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transform: skewX(45deg);
+    margin-right: 20px; }
+  .breadcrumbs a:after {
+    border-right: 1px solid #bec3c4;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    z-index: -1;
+    transform: skewX(-45deg);
+    margin-right: 20px;
+    bottom: 0; }
+
 /* Footer */
 footer {
   background-color: #3c414c; }
