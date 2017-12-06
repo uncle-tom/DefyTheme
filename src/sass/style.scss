@@ -231,6 +231,10 @@ li {
 	margin-bottom: 80px;
 }
 
+.services h2 {
+	margin-bottom: 80px;
+}
+
 .services-block {
 	min-height: 385px;
 	position: relative;
@@ -620,7 +624,7 @@ li {
 
 .breadcrumbs {
 	line-height: $xxl_size;
-	margin-bottom: $xxl_size;
+	margin-bottom: 60px;
 	border-bottom: 1px solid $grey_color;
 	a {
 		display: inline-block;
