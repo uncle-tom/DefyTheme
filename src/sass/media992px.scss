@@ -33,6 +33,7 @@ $xxxl_size: 56px;
 		background: $second_color;
 		right: 0;
 		transform: translateX(100%);
+		transition: .4s ease;
 		z-index: 2;
 	}
 	.hamburger-menu {
@@ -179,6 +180,9 @@ $xxxl_size: 56px;
 	}
 	.partner:last-child {
 		margin-bottom: 0px;
+	}
+	.review {
+		width: 100%;
 	}
 	footer {
 		.mobile-block-center {

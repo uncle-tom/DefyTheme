@@ -29,3 +29,12 @@ $('.count-number').counterUp({delay:10,time:2000,});
 function getCurrentScroll(){
 	return window.pageYOffset||document.documentElement.scrollTop;
 }
+
+$('.reviews-list').masonry({
+  itemSelector: '.review',
+  // gutter: 1,
+  percentPosition: true,
+  gutter: 12,
+  // horizontalOrder: true,
+  // originTop: false,
+});

@@ -38,8 +38,16 @@ li {
 	display: none;
 }
 
+.text-grey {
+	color: grey;
+}
+
 .right {
 	float: right;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 .block-center {
@@ -169,7 +177,6 @@ li {
 }
 
 .dropdown-menu {
-	min-width: 280px;
   margin: 0px;
   background-color: rgba(238,238,238,0.95);
 }
@@ -228,6 +235,7 @@ li {
 /* Main Services */
 
 .services {
+	margin-top: 80px;
 	margin-bottom: 80px;
 }
 
@@ -523,6 +531,7 @@ li {
 /* News */
 
 .news {
+	margin-top: 60px;
 	margin-bottom: 80px;
 }
 
@@ -624,7 +633,6 @@ li {
 
 .breadcrumbs {
 	line-height: $xxl_size;
-	margin-bottom: 60px;
 	border-bottom: 1px solid $grey_color;
 	a {
 		display: inline-block;
@@ -665,10 +673,12 @@ li {
 .pretty-block {
 	height: 155px;
 	position: relative;
+	margin-bottom: 25px;
 	border: 1px solid $grey_color;
+	background: #fff;
 	box-shadow: 0 2px 4px rgba(0,0,0,.2);
 	transition: .4s ease;
-	margin-bottom: 25px;
+	z-index: 3;
 	img {
 		width: 100%;
 		height: 155px;
@@ -708,10 +718,259 @@ li {
 }
 
 .pretty-block-more {
-	position: absolute;
+		position: absolute;
     bottom: 5px;
     right: 20px;
 }
+
+/* How We Work */
+
+.how-we-work {
+		font-size: $l_size;
+		line-height: 24px;
+		margin-top: 80px;
+		margin-bottom: 80px;
+}
+
+.how-we-work h2 {
+	margin-top: 0px;
+	margin-bottom: 80px;
+}
+
+.how-we-work-schema {
+		margin-bottom: 10px;
+}
+
+.how-we-work-schema-img {
+		position: relative;
+		display: table-cell;
+		padding-right: 68px;
+}
+
+.how-we-work-schema-img:after {
+		content: " ";
+		position: absolute;
+		width: 70px;
+		height: 2px;
+		top: 42.5px;
+		right: 0;
+		background: #a7a7a7;
+}
+
+.how-we-work-schema-text {
+		position: relative;
+	  display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.how-we-work-schema-number {
+		position: absolute;
+		top: 32px;
+		left: -16px;
+		color: #d9f0fa;
+		font-size: 44px;
+		font-weight: 900;
+}
+
+.how-we-work-photo li {
+	float: left;
+	width: 50%;
+}
+
+.how-we-work-photo img {
+		width: 100%;
+		padding: 15px 15px 15px 0px;
+}
+
+
+/* 404 */
+
+.page-not-found {
+	position: relative;
+	padding: 50px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.services {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	h2 {
+		margin: 0px;
+		padding: 25px;
+		z-index: 2;
+	}
+	h4 {
+		padding: 25px;
+	}
+}
+
+.page-not-found:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('http://defy-logistics.com.ua/wp-content/uploads/2017/02/defy-logistics-about.jpg');
+	background-size: cover;
+	opacity: 0.3;
+	-webkit-filter: grayscale(100%);
+	z-index: 1;
+}
+
+/* Our team */
+
+.our-team {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.our-team-description {
+	margin: 40px 0px;
+}
+
+.member {
+	display: flex;
+	position: relative;
+	margin: 25px 0px;
+  border: 1px solid $grey_color;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.member-img {
+	width: 40%;
+	float: left;
+	img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+}
+
+.member-info {
+	width: 60%;
+	float: left;
+	padding: 0px 15px;
+}
+
+.member-name {
+	padding: 10px 0px;
+	font-size: $xl_size;
+}
+
+.member-role {
+	font-style: italic;
+}
+
+.member-description {
+	padding: 10px 0px;
+	font-size: $m_size;
+	opacity: 0.9;
+}
+
+.member-social {
+	position: absolute;
+	bottom: 10px;
+	li {
+		float: left;
+		a {
+			float: left;
+    	padding-right: 15px;
+    	color: $first_color
+		}
+	}
+}
+
+/* Reviews */
+
+.reviews {
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
+
+.reviews h2 {
+	margin-bottom: 60px;
+}
+
+.reviews-send-message {
+	margin-top: 80px;
+	padding: 25px 0px;
+	font-size: $xl_size;
+	border-top: 3px solid $third_color;
+}
+
+.review {
+	width: 32.433333%;
+	display: inline-block;
+	padding: 25px;
+	margin-bottom: 15px;
+	border: 1px solid $grey_color;
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	box-sizing: border-box;
+	transition: .4s ease;
+}
+
+.review-top {
+	display: table;
+}
+
+.review-avatar img {
+	width: 55px;
+	height: 55px;
+	object-fit: cover;
+	float: left;
+	border-radius: 50%;
+}
+
+.review-name {
+	font-size: $xl_size;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 25px;
+}
+
+.review-description {
+	float: left;
+	margin: 25px 0px;
+	opacity: 0.9;
+}
+
+.review-date {
+	float: left;
+	font-size: $s_size;
+	color: $second_color;
+}
+
+/* Single Page */
+
+.single-page {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.single-page hr {
+	width: 200px;
+	margin: 25px 0px;
+	color: $third_color;
+	border-top: 2px solid;
+}
+
+.single-page-date, .single-page-author {
+	margin-bottom: 25px;
+}
+
+.single-page-text p {
+	font-size: $xl_size;
+}
+
+.single-page-info {
+	margin-top: 25px;
+	border-left: 1px solid grey;
+}
+
 /* Footer */
 
 footer {

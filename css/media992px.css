@@ -16,6 +16,7 @@
     background: #2f2f2f;
     right: 0;
     transform: translateX(100%);
+    transition: .4s ease;
     z-index: 2; }
   .hamburger-menu {
     width: 30px;
@@ -128,6 +129,8 @@
     margin-bottom: 40px; }
   .partner:last-child {
     margin-bottom: 0px; }
+  .review {
+    width: 100%; }
   footer .mobile-block-center {
     display: flex;
     justify-content: center; }
