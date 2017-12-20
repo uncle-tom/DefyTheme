@@ -341,6 +341,7 @@ li {
 
 /* Why Choose Us */
 .why-choose-us {
+  position: relative;
   margin-bottom: 80px; }
 
 .why-choose-us h2 {
@@ -348,6 +349,149 @@ li {
 
 .why-choose-us_description {
   margin-bottom: 80px; }
+
+.why-us-text {
+  position: relative;
+  font-size: 15px; }
+
+.why-us-text-01 {
+  position: absolute;
+  right: 80%;
+  top: 0px;
+  background: #fff;
+  z-index: 1; }
+
+.why-us-text-02 {
+  position: absolute;
+  right: 80%;
+  top: 90px;
+  background: #fff;
+  z-index: 1; }
+
+.why-us-text-03 {
+  position: absolute;
+  right: 80%;
+  top: 225px;
+  background: #fff;
+  z-index: 1; }
+
+.why-us-text-04 {
+  position: absolute;
+  left: 80%;
+  top: 0px;
+  background: #fff;
+  z-index: 1; }
+
+.why-us-text-05 {
+  position: absolute;
+  left: 80%;
+  top: 90px;
+  background: #fff;
+  z-index: 1; }
+
+.why-us-text-06 {
+  position: absolute;
+  left: 80%;
+  top: 225px;
+  background: #fff;
+  z-index: 1; }
+
+.why-us-img {
+  position: relative;
+  width: 658px;
+  height: 467px;
+  margin: auto;
+  background: url("../images/why-us.png");
+  background-repeat: no-repeat; }
+
+.why-us-icon-01 {
+  position: absolute;
+  left: 95px;
+  bottom: 190px; }
+
+.why-us-icon-01:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  right: 70px; }
+
+.why-us-icon-02 {
+  position: absolute;
+  right: 67px;
+  bottom: 190px; }
+
+.why-us-icon-02:before {
+  content: " ";
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  left: 70px; }
+
+.why-us-icon-03 {
+  position: absolute;
+  right: 95px;
+  bottom: 325px; }
+
+.why-us-icon-03:before {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  left: 70px; }
+
+.why-us-icon-04 {
+  position: absolute;
+  left: 130px;
+  bottom: 325px; }
+
+.why-us-icon-04:after {
+  content: " ";
+  position: absolute;
+  width: 135px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  right: 70px; }
+
+.why-us-icon-05 {
+  position: absolute;
+  left: 230px;
+  bottom: 415px; }
+
+.why-us-icon-05:after {
+  content: " ";
+  position: absolute;
+  width: 235px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  right: 70px; }
+
+.why-us-icon-06 {
+  position: absolute;
+  right: 195px;
+  bottom: 415px; }
+
+.why-us-icon-06:before {
+  content: " ";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  left: 70px; }
+
+.why-us-main-photo img {
+  width: auto;
+  display: block;
+  margin: auto; }
 
 .why-choose-us .photo img {
   width: 100%; }
