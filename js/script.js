@@ -18,23 +18,27 @@ $('.black-opacity').on('click', function (argument) {
 	console.log('click')
 });
 
-setInterval(function(){
-	$('#divUkr').text(moment.tz('Europe/Kiev').format('HH:mm'));
-	$('#divChina').text(moment.tz('Asia/Hong_Kong').format('HH:mm'));
-	$('#divSeoul').text(moment.tz('Asia/Seoul').format('HH:mm'));
-	$('#divLondon').text(moment.tz('Europe/London').format('HH:mm'));
-}, 1000);
-
-$('.count-number').counterUp({delay:10,time:2000,});
-function getCurrentScroll(){
-	return window.pageYOffset||document.documentElement.scrollTop;
+if ( $('.timezone').length > 0 ) {
+	setInterval(function(){
+		$('#divUkr').text(moment.tz('Europe/Kiev').format('HH:mm'));
+		$('#divChina').text(moment.tz('Asia/Hong_Kong').format('HH:mm'));
+		$('#divSeoul').text(moment.tz('Asia/Seoul').format('HH:mm'));
+		$('#divLondon').text(moment.tz('Europe/London').format('HH:mm'));
+	}, 1000);
 }
 
-$('.reviews-list').masonry({
-  itemSelector: '.review',
-  // gutter: 1,
-  percentPosition: true,
-  gutter: 12,
-  // horizontalOrder: true,
-  // originTop: false,
-});
+
+if ( $('.count-number').length > 0 ) {
+	$('.count-number').counterUp({delay:10,time:2000,});
+	function getCurrentScroll(){
+		return window.pageYOffset||document.documentElement.scrollTop;
+	}
+}
+
+if ( $('.reviews-list').length > 0 ) {
+	$('.reviews-list').masonry({
+	  itemSelector: '.review',
+	  percentPosition: true,
+	  gutter: 12,
+	});
+}

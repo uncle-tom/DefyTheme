@@ -30,11 +30,48 @@ $xxxl_size: 56px;
 		position: fixed;
 		width: 50%;
 		height: 100vh;
+		color: #fff;
 		background: $second_color;
 		right: 0;
+		padding: 0px 15px;
 		transform: translateX(100%);
 		transition: .4s ease;
 		z-index: 2;
+		.acitve a {
+			color: $third_color;
+		}
+		a {
+			display: block;
+			color: #fff;
+			padding-bottom: 5px;
+			padding-top: 5px;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		a:focus {
+			text-decoration: none;	
+		}
+		.mobile-menu-contact {
+			margin-bottom: 25px;
+		}
+		.social-icons li {
+			padding: 0px 5px 0px 0px;
+		}
+	}
+	.mobile-menu-top {
+		margin-bottom: 25px;
+	}
+	.mobile-menu-nav .panel {
+		background: transparent;
+		border-radius: none;
+		border: none;
+		box-shadow: none;
+		color: #fff;
+		margin-bottom: 0px;
+		.panel-heading {
+			padding: 0px;
+		}
 	}
 	.hamburger-menu {
 		width: 30px;

@@ -13,11 +13,39 @@
     position: fixed;
     width: 50%;
     height: 100vh;
+    color: #fff;
     background: #2f2f2f;
     right: 0;
+    padding: 0px 15px;
     transform: translateX(100%);
     transition: .4s ease;
     z-index: 2; }
+    .mobile-menu .acitve a {
+      color: #5db2c3; }
+    .mobile-menu a {
+      display: block;
+      color: #fff;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+    .mobile-menu a:hover {
+      text-decoration: none; }
+    .mobile-menu a:focus {
+      text-decoration: none; }
+    .mobile-menu .mobile-menu-contact {
+      margin-bottom: 25px; }
+    .mobile-menu .social-icons li {
+      padding: 0px 5px 0px 0px; }
+  .mobile-menu-top {
+    margin-bottom: 25px; }
+  .mobile-menu-nav .panel {
+    background: transparent;
+    border-radius: none;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    margin-bottom: 0px; }
+    .mobile-menu-nav .panel .panel-heading {
+      padding: 0px; }
   .hamburger-menu {
     width: 30px;
     height: 64px;
