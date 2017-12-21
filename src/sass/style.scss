@@ -428,6 +428,7 @@ li {
 /* Why Choose Us */
 
 .why-choose-us {
+	position: relative;
 	margin-bottom: 80px;
 }
 
@@ -437,6 +438,170 @@ li {
 
 .why-choose-us_description {
 	margin-bottom: 80px;
+}
+
+.why-us-text {
+	position: relative;
+	font-size: 15px;
+}
+
+.why-us-text-01 {
+	position: absolute;
+	right: 80%;
+	top: 0px;
+	background: #fff;
+	z-index: 1;
+}
+
+.why-us-text-02 {
+	position: absolute;
+	right: 80%;
+	top: 90px;
+	background: #fff;
+	z-index: 1;
+}
+
+.why-us-text-03 {
+	position: absolute;
+	right: 80%;
+	top: 225px;
+	background: #fff;
+	z-index: 1;
+}
+
+.why-us-text-04 {
+	position: absolute;
+	left: 80%;
+	top: 0px;
+	background: #fff;
+	z-index: 1;
+}
+
+.why-us-text-05 {
+	position: absolute;
+	left: 80%;
+	top: 90px;
+	background: #fff;
+	z-index: 1;
+}
+
+.why-us-text-06 {
+	position: absolute;
+	left: 80%;
+	top: 225px;
+	background: #fff;
+	z-index: 1;
+}
+
+.why-us-img {
+	position: relative;
+	width: 658px;
+    height: 467px;
+    margin: auto;
+    background: url('../images/why-us.png');
+    background-repeat: no-repeat;
+}
+
+.why-us-icon-01 {
+	position: absolute;
+    left: 95px;
+	bottom: 190px;
+}
+
+.why-us-icon-01:after {
+	content: " ";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #a9a9a8;
+    top: 35px;
+    right: 70px;
+}
+
+.why-us-icon-02 {
+	position: absolute;
+    right: 67px;
+	bottom: 190px;
+}
+
+.why-us-icon-02:before {
+	content: " ";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background: #a9a9a8;
+    top: 35px;
+    left: 70px;
+}
+
+.why-us-icon-03 {
+	position: absolute;
+	right: 95px;
+	bottom: 325px;
+}
+
+.why-us-icon-03:before {
+	content: " ";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #a9a9a8;
+    top: 35px;
+    left: 70px;
+}
+
+.why-us-icon-04 {
+	position: absolute;
+	left: 130px;
+	bottom: 325px;
+}
+
+.why-us-icon-04:after {
+	content: " ";
+    position: absolute;
+    width: 135px;
+    height: 1px;
+    background: #a9a9a8;
+    top: 35px;
+    right: 70px;
+}
+
+.why-us-icon-05 {
+	position: absolute;
+	left: 230px;
+    bottom: 415px;
+}
+
+.why-us-icon-05:after {
+	content: " ";
+    position: absolute;
+    width: 235px;
+    height: 1px;
+    background: #a9a9a8;
+    top: 35px;
+    right: 70px;
+}
+
+.why-us-icon-06 {
+	position: absolute;
+	right: 195px;
+    bottom: 415px;
+}
+
+.why-us-icon-06:before {
+	content: " ";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background: #a9a9a8;
+    top: 35px;
+    left: 70px;
+}
+
+.why-us-main-photo img {
+	width: auto;
+	display: block;
+	margin: auto;
 }
 
 .why-choose-us .photo img {
@@ -969,16 +1134,55 @@ li {
 }
 
 .single-page-date, .single-page-author {
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .single-page-text p {
 	font-size: $xl_size;
 }
 
+.single-page-text li {
+	font-size: $xl_size;
+	list-style-type: inherit;
+	margin: 10px 0px;
+}
+
+.single-page-text img {
+	width: 100%;
+}
+
 .single-page-info {
 	margin-top: 25px;
-	border-left: 1px solid grey;
+}
+
+/* Quote */
+
+.quote {
+	padding: 25px 0px;
+	margin: 25px 0px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.quote-text {
+	font-size: 21px;
+	margin-bottom: 10px;
+} 
+
+/* Swiper */
+
+.swiper-container {
+	position: relative;
+	margin: 25px 0px;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* Footer */
