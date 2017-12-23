@@ -113,13 +113,16 @@ li {
   position: absolute;
   background: none;
   left: 0;
-  top: 0;
+  top: 35px;
   border-radius: 0px;
   box-shadow: none;
   border: none;
   z-index: 4;
   color: #fff;
   text-transform: uppercase; }
+
+.second-header_logo li {
+  float: left; }
 
 .second-header_menu {
   font-size: 16px;
