@@ -43,14 +43,16 @@ if ( $('.reviews-list').length > 0 ) {
 	});
 }
 
-var mySwiper = new Swiper ('.swiper-container', {
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'fraction',
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	loop: 'true'
-})
+if ( $('.swiper-container').length > 0 ) {
+	var mySwiper = new Swiper ('.swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		loop: 'true'
+	})
+}

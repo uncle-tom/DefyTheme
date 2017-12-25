@@ -5,7 +5,8 @@
     display: block; }
   .second-header {
     background: #2f2f2f;
-    height: 64px; }
+    height: 64px;
+    top: 0px; }
   .second-header_logo li {
     line-height: 64px;
     float: left; }
@@ -91,6 +92,10 @@
     margin-bottom: 80px; }
   .services-block:last-child {
     margin-bottom: 0px; }
+  .services-more {
+    bottom: auto; }
+  .other-services {
+    padding-bottom: 15px; }
   .other-services .container:before, .other-services .container:after {
     display: none; }
   .other-services h2 {
@@ -113,6 +118,8 @@
     padding: 15px 0px;
     border-top: none !important;
     color: #fff; }
+  .why-choose-us {
+    margin-bottom: 0px; }
   .why-choose-us-row {
     margin-bottom: 35px; }
   .why-choose-us-row_icon {
@@ -142,6 +149,13 @@
     right: 0px; }
   .why-choose-us-row:last-child .why-choose-us-row_icon:before {
     display: none; }
+  .counters .block-center {
+    display: block; }
+  .counters .count {
+    margin: 25px 0px;
+    border-right: none; }
+  .counters .count-text {
+    font-size: 18px; }
   .special-offer .second-button {
     margin: auto; }
   .special-offer-left_photo {

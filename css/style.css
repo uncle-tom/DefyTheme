@@ -409,66 +409,10 @@ li {
 
 .why-us-icon-01 {
   position: absolute;
-  left: 95px;
-  bottom: 190px; }
-
-.why-us-icon-01:after {
-  content: " ";
-  position: absolute;
-  width: 100px;
-  height: 1px;
-  background: #a9a9a8;
-  top: 35px;
-  right: 70px; }
-
-.why-us-icon-02 {
-  position: absolute;
-  right: 67px;
-  bottom: 190px; }
-
-.why-us-icon-02:before {
-  content: " ";
-  position: absolute;
-  width: 70px;
-  height: 1px;
-  background: #a9a9a8;
-  top: 35px;
-  left: 70px; }
-
-.why-us-icon-03 {
-  position: absolute;
-  right: 95px;
-  bottom: 325px; }
-
-.why-us-icon-03:before {
-  content: " ";
-  position: absolute;
-  width: 100px;
-  height: 1px;
-  background: #a9a9a8;
-  top: 35px;
-  left: 70px; }
-
-.why-us-icon-04 {
-  position: absolute;
-  left: 130px;
-  bottom: 325px; }
-
-.why-us-icon-04:after {
-  content: " ";
-  position: absolute;
-  width: 135px;
-  height: 1px;
-  background: #a9a9a8;
-  top: 35px;
-  right: 70px; }
-
-.why-us-icon-05 {
-  position: absolute;
   left: 230px;
   bottom: 415px; }
 
-.why-us-icon-05:after {
+.why-us-icon-01:after {
   content: " ";
   position: absolute;
   width: 235px;
@@ -477,15 +421,71 @@ li {
   top: 35px;
   right: 70px; }
 
-.why-us-icon-06 {
+.why-us-icon-02 {
+  position: absolute;
+  left: 130px;
+  bottom: 325px; }
+
+.why-us-icon-02:after {
+  content: " ";
+  position: absolute;
+  width: 135px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  right: 70px; }
+
+.why-us-icon-03 {
+  position: absolute;
+  left: 95px;
+  bottom: 190px; }
+
+.why-us-icon-03:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  right: 70px; }
+
+.why-us-icon-04 {
   position: absolute;
   right: 195px;
   bottom: 415px; }
 
-.why-us-icon-06:before {
+.why-us-icon-04:before {
   content: " ";
   position: absolute;
   width: 200px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  left: 70px; }
+
+.why-us-icon-05 {
+  position: absolute;
+  right: 95px;
+  bottom: 325px; }
+
+.why-us-icon-05:before {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #a9a9a8;
+  top: 35px;
+  left: 70px; }
+
+.why-us-icon-06 {
+  position: absolute;
+  right: 67px;
+  bottom: 190px; }
+
+.why-us-icon-06:before {
+  content: " ";
+  position: absolute;
+  width: 70px;
   height: 1px;
   background: #a9a9a8;
   top: 35px;
@@ -520,7 +520,7 @@ li {
   font-size: 26px;
   vertical-align: bottom; }
 
-.count-bottom {
+.count-text {
   font-size: 14px;
   color: #acacac; }
 
@@ -534,7 +534,7 @@ li {
   margin: 50px 0; }
 
 .special-offer-left_first-title {
-  font-size: 3vw;
+  font-size: 48px;
   font-weight: 900;
   margin-bottom: 10px;
   color: #ffffff; }
@@ -542,7 +542,7 @@ li {
     color: #5db2c3; }
 
 .special-offer-left_second-title {
-  font-size: 2.5vw;
+  font-size: 34px;
   color: #ffffff; }
 
 .special-offer-left_description {
@@ -1110,7 +1110,8 @@ footer {
     display: block; }
   .second-header {
     background: #2f2f2f;
-    height: 64px; }
+    height: 64px;
+    top: 0px; }
   .second-header_logo li {
     line-height: 64px;
     float: left; }
@@ -1196,6 +1197,10 @@ footer {
     margin-bottom: 80px; }
   .services-block:last-child {
     margin-bottom: 0px; }
+  .services-more {
+    bottom: auto; }
+  .other-services {
+    padding-bottom: 15px; }
   .other-services .container:before, .other-services .container:after {
     display: none; }
   .other-services h2 {
@@ -1218,6 +1223,8 @@ footer {
     padding: 15px 0px;
     border-top: none !important;
     color: #fff; }
+  .why-choose-us {
+    margin-bottom: 0px; }
   .why-choose-us-row {
     margin-bottom: 35px; }
   .why-choose-us-row_icon {
@@ -1247,6 +1254,13 @@ footer {
     right: 0px; }
   .why-choose-us-row:last-child .why-choose-us-row_icon:before {
     display: none; }
+  .counters .block-center {
+    display: block; }
+  .counters .count {
+    margin: 25px 0px;
+    border-right: none; }
+  .counters .count-text {
+    font-size: 18px; }
   .special-offer .second-button {
     margin: auto; }
   .special-offer-left_photo {
