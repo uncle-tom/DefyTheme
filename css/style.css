@@ -975,9 +975,9 @@ li {
   object-fit: cover; }
 
 /* Footer */
-footer {
+footer, #sendrequest {
   background-color: #3c414c; }
-  footer input {
+  footer input, #sendrequest input {
     width: 100%;
     height: 55px;
     color: #fff;
@@ -987,7 +987,7 @@ footer {
     margin-bottom: 10px;
     font-size: 14px;
     box-sizing: inherit; }
-  footer textarea {
+  footer textarea, #sendrequest textarea {
     width: 100%;
     height: 185px;
     background-color: transparent;
@@ -996,7 +996,7 @@ footer {
     margin-bottom: 10px;
     font-size: 14px;
     box-sizing: inherit; }
-  footer button {
+  footer button, #sendrequest button {
     width: 100%;
     height: 55px;
     color: #5db2c3;
@@ -1006,26 +1006,26 @@ footer {
     margin-bottom: 10px;
     text-transform: uppercase;
     transition: 0.5s; }
-  footer button:hover {
+  footer button:hover, #sendrequest button:hover {
     background-color: #5db2c3;
     color: #fff; }
-  footer .mobile-block-center {
+  footer .mobile-block-center, #sendrequest .mobile-block-center {
     display: block; }
-  footer .for-before:after {
+  footer .for-before:after, #sendrequest .for-before:after {
     bottom: 58%;
     left: 33%; }
-  footer .for-before:before {
+  footer .for-before:before, #sendrequest .for-before:before {
     left: 33%; }
-  footer ::-webkit-input-placeholder {
+  footer ::-webkit-input-placeholder, #sendrequest ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #fff; }
-  footer ::-moz-placeholder {
+  footer ::-moz-placeholder, #sendrequest ::-moz-placeholder {
     /* Firefox 19+ */
     color: #fff; }
-  footer :-ms-input-placeholder {
+  footer :-ms-input-placeholder, #sendrequest :-ms-input-placeholder {
     /* IE 10+ */
     color: #fff; }
-  footer :-moz-placeholder {
+  footer :-moz-placeholder, #sendrequest :-moz-placeholder {
     /* Firefox 18- */
     color: #fff; }
 
@@ -1071,6 +1071,25 @@ footer {
 .copyright a {
   color: #fff;
   text-decoration: underline; }
+
+#sendrequest {
+  background-color: #fff; }
+  #sendrequest input {
+    color: #000; }
+  #sendrequest textarea {
+    color: #000; }
+  #sendrequest ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #9e9e9e; }
+  #sendrequest ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #9e9e9e; }
+  #sendrequest :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #9e9e9e; }
+  #sendrequest :-moz-placeholder {
+    /* Firefox 18- */
+    color: #9e9e9e; }
 
 /* Social Icons */
 .social-icons {

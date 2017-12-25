@@ -1191,7 +1191,7 @@ li {
 
 /* Footer */
 
-footer {
+footer, #sendrequest {
 	background-color: $first_color;
 	input {
 		width: 100%;
@@ -1251,9 +1251,7 @@ footer {
 	:-moz-placeholder { /* Firefox 18- */
 	  color: #fff;
 	}
-
 }
-
 
 
 .footer-title h2 {
@@ -1307,6 +1305,28 @@ footer {
 .copyright a {
 	color: #fff;
 	text-decoration: underline;
+}
+
+#sendrequest {
+	background-color: #fff;
+	input {
+		color: #000;
+	}
+	textarea {
+		color: #000;
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #9e9e9e;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: #9e9e9e;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: #9e9e9e;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: #9e9e9e;
+	}
 }
 
 /* Social Icons */
