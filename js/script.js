@@ -65,7 +65,7 @@ $('#form').submit(function() { // проверка на пустоту запо�
 	}
 	$.ajax({
 		type: "POST",
-		url: "mail.php",
+		url: "send_mail.php",
 		data: $(this).serialize()
 	}).done(function() {
 		$('#snoAlertBox').fadeIn();
