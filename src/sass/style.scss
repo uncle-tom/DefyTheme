@@ -51,8 +51,12 @@ li {
 }
 
 .block-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .black-opacity {
@@ -103,24 +107,38 @@ li {
   height: calc(100vh - 50px);
   position: relative;
   min-height: 100%;
-  background-image: url(http://defy-logistics.com.ua/wp-content/uploads/2017/07/slidebg2-100.png);
+  background-image: url(/images/welcome-block.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-bottom: 80px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .welcome-text {
 	color: #ffffff;
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	vertical-align: middle;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .welcome-text_title {
@@ -152,7 +170,8 @@ li {
   left: 0;
   top: 35px;
   border-radius: 0px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none;
   z-index: 4;
   color: #fff;
@@ -208,7 +227,8 @@ li {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid rgba(238,238,238,0.95);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .dropdown-toggle {
@@ -243,6 +263,10 @@ li {
 	margin-bottom: 80px;
 }
 
+.head-services {
+	background-image: url('../images/page.jpg');
+}
+
 .services h2 {
 	margin-bottom: 80px;
 }
@@ -260,10 +284,6 @@ li {
 	text-transform: uppercase;
 }
 
-.services-description {
-	
-}
-
 .services-photo img {
 	width: 100%;
 }
@@ -278,7 +298,8 @@ li {
 /* Author block */
 
 .author {
-	box-shadow: 0px 0px 7px #4b4b4b;
+	-webkit-box-shadow: 0px 0px 7px #4b4b4b;
+	        box-shadow: 0px 0px 7px #4b4b4b;
 	min-height: 385px;
 }
 
@@ -500,10 +521,10 @@ li {
 .why-us-img {
 	position: relative;
 	width: 658px;
-    height: 467px;
-    margin: auto;
-    background: url('../images/why-us.png');
-    background-repeat: no-repeat;
+  height: 467px;
+  margin: auto;
+  background: url('../images/why-us.png');
+  background-repeat: no-repeat;
 }
 
 .why-us-icon-01 {
@@ -687,7 +708,8 @@ li {
     top: 0;
     -webkit-clip-path: polygon(0 100%, 0% 100%, 100% 100%, 100% 0%, 20% 0%);
     clip-path: polygon(0 100%, 0% 100%, 100% 100%, 100% 0%, 20% 0%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .special-offer-center_photo {
@@ -705,6 +727,14 @@ li {
 	margin-bottom: 80px;
 }
 
+.head-news {
+	background-image: url('../images/news.jpg');
+}
+
+.head-single-news {
+	background-image: url('../images/single-news.jpg');
+}
+
 .news h2 {
 	margin-bottom: 70px;
 }
@@ -717,7 +747,8 @@ li {
 .news-photo img {
 	width: 100%;
 	height: 250px;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .news-title {
@@ -773,12 +804,17 @@ li {
 /* Head Page Block */
 
 .head-page-block {
-	background-image: url(http://defy-logistics.com.ua/wp-content/uploads/2017/02/defylogistics-dostavka2.jpg);
 	background-size: cover;
 	background-position: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-    justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 	position: relative;
 	height: 415px;
 	min-height: 415px;
@@ -820,7 +856,8 @@ li {
 		right: 0;
 		top: 0;
 		z-index: -1;
-		transform: skewX(45deg);
+		-webkit-transform: skewX(45deg);
+		        transform: skewX(45deg);
 		margin-right: 20px
 	}
 	a:after {
@@ -834,7 +871,8 @@ li {
 		top: auto;
 		bottom: 0;
 		z-index: -1;
-		transform: skewX(-45deg);
+		-webkit-transform: skewX(-45deg);
+		        transform: skewX(-45deg);
 		margin-right: 20px;
 		bottom: 0;
 	}
@@ -846,18 +884,22 @@ li {
 	margin-bottom: 25px;
 	border: 1px solid $grey_color;
 	background: #fff;
-	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	        box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	-webkit-transition: .4s ease;
 	transition: .4s ease;
 	z-index: 3;
 	img {
 		width: 100%;
 		height: 155px;
-		object-fit: cover;
+		-o-object-fit: cover;
+		   object-fit: cover;
 	};
 }
 
 .pretty-block:hover {
-	box-shadow: 1px 4px 5px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 1px 4px 5px rgba(0,0,0,0.4);
+	        box-shadow: 1px 4px 5px rgba(0,0,0,0.4);
 }
 
 .pretty-block-img {
@@ -900,6 +942,10 @@ li {
 		line-height: 24px;
 		margin-top: 80px;
 		margin-bottom: 80px;
+}
+
+.head-how-we-work {
+	background-image: url(../images/news/news-1.jpg);
 }
 
 .how-we-work h2 {
@@ -961,10 +1007,19 @@ li {
 .page-not-found {
 	position: relative;
 	padding: 50px 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	.services {
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -979,12 +1034,16 @@ li {
 	}
 }
 
+.head-page-not-found {
+	background-image: url('../images/404.jpg');
+}
+
 .page-not-found:after {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url('http://defy-logistics.com.ua/wp-content/uploads/2017/02/defy-logistics-about.jpg');
+	background: url('../images/page-not-found.jpg');
 	background-size: cover;
 	opacity: 0.3;
 	-webkit-filter: grayscale(100%);
@@ -998,16 +1057,23 @@ li {
 	margin-bottom: 80px;
 }
 
+.head-our-team {
+	background-image: url(../images/our-team.jpg);
+}
+
 .our-team-description {
 	margin: 40px 0px;
 }
 
 .member {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	margin: 25px 0px;
   border: 1px solid $grey_color;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+          box-shadow: 0 2px 4px rgba(0,0,0,.2);
 }
 
 .member-img {
@@ -1016,7 +1082,8 @@ li {
 	img {
 		width: 100%;
 		height: 225px;
-		object-fit: cover;
+		-o-object-fit: cover;
+		   object-fit: cover;
 	}
 }
 
@@ -1070,6 +1137,10 @@ li {
 	margin-top: 80px;
 }
 
+.head-reviews {
+	background-image: url(../images/reviews.jpg);
+}
+
 .reviews h2 {
 	margin-bottom: 60px;
 }
@@ -1087,8 +1158,11 @@ li {
 	padding: 25px;
 	margin-bottom: 15px;
 	border: 1px solid $grey_color;
-	box-shadow: 0 2px 4px rgba(0,0,0,.2);
-	box-sizing: border-box;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	        box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transition: .4s ease;
 	transition: .4s ease;
 }
 
@@ -1099,7 +1173,8 @@ li {
 .review-avatar img {
 	width: 55px;
 	height: 55px;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	float: left;
 	border-radius: 50%;
 }
@@ -1186,7 +1261,8 @@ li {
 .swiper-slide img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 /* Footer */
@@ -1202,7 +1278,8 @@ footer, #sendrequest {
     padding: 0px 20px;
     margin-bottom: 10px;
     font-size: 14px;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 	};
 	textarea {
     width: 100%;
@@ -1212,7 +1289,8 @@ footer, #sendrequest {
     padding: 20px;
     margin-bottom: 10px;
     font-size: 14px;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 	};
 	button {
 		width: 100%;
@@ -1223,6 +1301,7 @@ footer, #sendrequest {
 		padding: 0px 20px;
 		margin-bottom: 10px;
 		text-transform: uppercase;
+		-webkit-transition: 0.5s;
 		transition: 0.5s;
 	};
 	button:hover {
@@ -1350,6 +1429,7 @@ footer, #sendrequest {
 	font-size: $m_size;
 	text-align: center;
 	cursor: pointer;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
