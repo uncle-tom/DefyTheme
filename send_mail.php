@@ -4,7 +4,7 @@
   $mail = new PHPMailer;
   //$mail->SMTPDebug = 2;
   $mail->isSMTP();                                      // Set mailer to use SMTP
-  $mail->Host = getenv('DefyHost')  // Specify main and backup server
+  $mail->Host = getenv('DefyHost');  // Specify main and backup server
   $mail->SMTPAuth = true;                               // Enable SMTP authentication
   $mail->Username = getenv('DefyUsername');                            // SMTP username
   $mail->Password = getenv('DefyPassword');                           // SMTP password
