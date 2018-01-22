@@ -58,7 +58,7 @@ if ( $('.swiper-container').length > 0 ) {
 }
 
 //Send Mail TOP
-$('#form-top').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
 	if (document.form.name.value == '' || document.form.email.value == '' || document.form.phone.value == '') {
 		valid = false;
 		return valid;
