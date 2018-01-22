@@ -75,21 +75,3 @@ $('#form').submit(function() { // проверка на пустоту запо�
 	});
 	return false;
 });
-
-//Send Mail FOOTER
-$('#form-footer').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-	if (document.form.name.value == '' || document.form.email.value == '' || document.form.phone.value == '') {
-		valid = false;
-		return valid;
-	}
-	$.ajax({
-		type: "POST",
-		url: "send_mail.php",
-		data: $(this).serialize()
-	}).done(function() {
-		$('#thxAlert').modal('show');
-		$(this).find('input').val('');
-		$('#form-footer').trigger('reset');
-	});
-	return false;
-});
