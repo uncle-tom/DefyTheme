@@ -59,7 +59,7 @@ if ( $('.swiper-container').length > 0 ) {
 
 //Send Mail TOP
 $('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-	if (document.form.name.value == '' || document.form.email.value == '' || document.form.phone.value == '') {
+	if (document.getElementById('sendRequest').form.name.value == '' || document.getElementById('sendRequest').form.email.value == '' || document.getElementById('sendRequest').form.phone.value == '' || document.getElementById('sendRequest').form.text.value == '') {
 		valid = false;
 		return valid;
 	}
@@ -78,8 +78,7 @@ $('#form').submit(function() { // проверка на пустоту запо�
 
 //Send Mail FOOTER
 $('#form-footer').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-	console.log('click');
-	if (document.form.name.value == '' || document.form.email.value == '' || document.form.phone.value == '') {
+	if (document.getElementById('footer-right').form.name.value == '' || document.getElementById('footer-right').form.email.value == '' || document.getElementById('footer-right').form.phone.value == '' || document.getElementById('footer-right').form.text.value == '') {
 		valid = false;
 		return valid;
 	}
