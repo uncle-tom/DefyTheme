@@ -78,6 +78,7 @@ $('#form').submit(function() { // проверка на пустоту запо�
 
 //Send Mail FOOTER
 $('#form-footer').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+	console.log('click');
 	if (document.form.name.value == '' || document.form.email.value == '' || document.form.phone.value == '') {
 		valid = false;
 		return valid;
