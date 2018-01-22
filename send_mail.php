@@ -2,17 +2,18 @@
   require 'phpmailer/class.phpmailer.php';
 
   $mail = new PHPMailer;
-  //$mail->SMTPDebug = 2;
+  $mail->SMTPDebug = 2;
   $mail->isSMTP();                                      // Set mailer to use SMTP
-  $mail->Host = getenv('DefyHost');  // Specify main and backup server
+  $mail->Host = 'email-smtp.us-east-1.amazonaws.com';  // Specify main and backup server
   $mail->SMTPAuth = true;                               // Enable SMTP authentication
-  $mail->Username = getenv('DefyUsername');                            // SMTP username
-  $mail->Password = getenv('DefyPassword');                           // SMTP password
+  $mail->Username = 'AKIAJELYPMFM43E3BQDA';                            // SMTP username
+  $mail->Password = 'Arg23ITPna9ZY7/LfnUyBAfElECfMJOKRNau/5Yajqku';                           // SMTP password
   $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+  $mail->Port = 587;
 
-  $mail->From = getenv('DefyFrom');
-  $mail->FromName = 'DefyTheme';
-  $mail->addAddress(getenv('DefyTo'));  // Add a recipient
+  $mail->From = 'germaninthetown@gmail.com';
+  $mail->FromName = 'DefioTheme';
+  $mail->addAddress('pelegrin2puk@gmail.com', 'Dmytro');  // Add a recipient
   $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
   $mail->isHTML(true);                                  // Set email format to HTML
 
