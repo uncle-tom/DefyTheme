@@ -68,7 +68,8 @@ $('#form').submit(function() { // проверка на пустоту запо�
 		url: "send_mail.php",
 		data: $(this).serialize()
 	}).done(function() {
-		$('#snoAlertBox').fadeIn();
+		$('#sendRequest').modal('hide');
+		$('#thxAlert').modal('show');
 		$(this).find('input').val('');
 		$('#form').trigger('reset');
 	});

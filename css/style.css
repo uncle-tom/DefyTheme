@@ -76,7 +76,7 @@ li {
   height: calc(100vh - 50px);
   position: relative;
   min-height: 100%;
-  background-image: url(/images/welcome-block.png);
+  background-image: url(../images/welcome-block.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -260,7 +260,7 @@ li {
 
 /* Other Servieces */
 .map-bg {
-  background: url(http://defy-logistics.com.ua/wp-content/uploads/2017/02/map-bg.png) no-repeat;
+  background: url(../images/map-bg.png) no-repeat;
   background-position: 50%;
   position: relative; }
 
