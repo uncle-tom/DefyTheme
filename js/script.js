@@ -57,11 +57,6 @@ if ( $('.swiper-container').length > 0 ) {
 	})
 }
 
-$('.modal-title').on('click', function(){
-	$('#sendRequest').modal('hide');
-	$('#thxAlert').modal('show');
-})
-
 //Send Mail
 $('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
 	if (document.form.name.value == '' || document.form.email.value == '' || document.form.phone.value == '') {
