@@ -59,7 +59,10 @@ if ( $('.swiper-container').length > 0 ) {
 
 //Send Mail TOP
 $('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-
+	if (document.getElementById('form').name.value == '' || document.getElementById('form').email.value == '' || document.getElementById('form').phone.value == '' || document.getElementById('form').text.value == '') {
+		valid = false;
+		return valid;
+	}
 	$.ajax({
 		type: "POST",
 		url: "send_mail.php",
@@ -75,7 +78,10 @@ $('#form').submit(function() { // проверка на пустоту запо�
 
 //Send Mail FOOTER
 $('#form-footer').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-
+	if (document.getElementById('form-footer').name.value == '' || document.getElementById('form-footer').email.value == '' || document.getElementById('form-footer').phone.value == '' || document.getElementById('form-footer').text.value == '') {
+		valid = false;
+		return valid;
+	}
 	$.ajax({
 		type: "POST",
 		url: "send_mail.php",
