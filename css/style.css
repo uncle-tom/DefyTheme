@@ -555,7 +555,9 @@ li {
   margin-bottom: 80px; }
 
 .special-offer-left {
-  margin: 50px 0; }
+  position: relative;
+  margin: 50px 0;
+  z-index: 99; }
 
 .special-offer-left_first-title {
   font-size: 48px;
@@ -1064,6 +1066,7 @@ footer, #sendrequest {
   footer textarea, #sendrequest textarea {
     width: 100%;
     height: 185px;
+    color: #fff;
     background-color: transparent;
     border: 1px solid #cacaca;
     padding: 20px;
