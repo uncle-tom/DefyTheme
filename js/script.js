@@ -20,10 +20,10 @@ $('.black-opacity').on('click', function (argument) {
 
 if ( $('.timezone').length > 0 ) {
 	setInterval(function(){
-		$('#divUkr').text(moment.tz('Europe/Kiev').format('HH:mm'));
-		$('#divChina').text(moment.tz('Asia/Hong_Kong').format('HH:mm'));
-		$('#divSeoul').text(moment.tz('Asia/Seoul').format('HH:mm'));
-		$('#divLondon').text(moment.tz('Europe/London').format('HH:mm'));
+		$('#divOne').text(moment.tz('Europe/Kiev').format('HH:mm'));
+		$('#divTwo').text(moment.tz('Asia/Hong_Kong').format('HH:mm'));
+		$('#divThree').text(moment.tz('Asia/Seoul').format('HH:mm'));
+		$('#divFour').text(moment.tz('Europe/London').format('HH:mm'));
 	}, 1000);
 }
 
